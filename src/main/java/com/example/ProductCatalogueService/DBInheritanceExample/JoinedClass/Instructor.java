@@ -5,6 +5,6 @@ import jakarta.persistence.PrimaryKeyJoinColumn;
 
 @Entity(name = "jc_instructor")
 @PrimaryKeyJoinColumn(name = "user_id")
-public class Instructor {
+public class Instructor extends User {
     String company;
 }
