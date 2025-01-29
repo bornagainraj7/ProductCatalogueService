@@ -40,7 +40,7 @@ public class ProductController {
         return productDtoList;
     }
 
-    @GetMapping("/${productId}")
+    @GetMapping("/{productId}")
     public ResponseEntity<ProductDto> getSingleProduct(@PathVariable Long productId) {
         try {
             if (productId > 0) {
